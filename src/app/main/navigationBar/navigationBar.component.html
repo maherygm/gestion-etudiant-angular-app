@@ -1,0 +1,17 @@
+<div class="navigationBar-main-container">
+  <h1>ScoEmit</h1>
+  <div class="nav-content">
+    <ul>
+      <li>Accueil</li>
+      <li>A propos</li>
+      <li>Solution</li>
+      <li>Contact</li>
+    </ul>
+  </div>
+  <div class="action-container">
+    <button class="connection">
+      <a [routerLink]="['/login']"> Se connecter</a>
+    </button>
+    <button (click)="handleClick()" class="dark-mode">mode {{ mode }}</button>
+  </div>
+</div>

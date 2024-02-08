@@ -1,0 +1,158 @@
+@font-face {
+  font-family: "KronaOne";
+  src: url("../../fonts/KronaOne.ttf");
+}
+@font-face {
+  font-family: "Nunito";
+  src: url("../../fonts/Nunito.ttf");
+}
+/* @import url("../../fonts/KronaOne.ttf");
+@import url("../../fonts/Nunito.ttf"); */
+
+:root {
+  /* principal color */
+  --primaryColor: #843730;
+  --secondaryColor: #63617b;
+  --thirdColor: #3f7b43;
+
+  --disabledColor: #8b8b8b;
+  --whiteColor: #515151;
+  --fillInput: #ffffff;
+  --greyColor: #e9ecf4;
+  --hoverColor: #f8f9fb;
+
+  //input background-color;
+  --inputBackgroundColor: #efefef;
+
+  --hoverBtnColor: #00000031;
+
+  /* background */
+  --backgroundColor: #cdcdcd;
+  --backgroundColorNav: #121321;
+
+  // background transparent reverse
+  --backgroundColorTrasparentReverse: #00000015;
+
+  --backgroundColorTrasparentReverse2: #0a090932;
+
+  --backgroundColorTrasparentReverse3: #ffffff25;
+
+  --backgroundColorTransparent: rgba(255, 255, 255, 0.247);
+  --backgroundColorTransparentDark: rgb(1, 1, 1);
+
+  /* background cards */
+  --backgroundColorCards: #fff;
+
+  /* Transparent Color */
+  --whiteColorTransparent: rgba(255, 255, 255, 0.7);
+  --darkColorTransparent: rgba(0, 0, 0, 0.06);
+
+  /* Cursor Image*/
+  --cursorIcon: url("../../image/cursor/Cursor_Dark_Line.png");
+
+  /* Font color */
+  --darkFontColor: #030239;
+  --lightFontColor: #222e43;
+
+  /* Success color */
+  --succesColor: #1b9a22;
+  --darksuccesColor: #26822b;
+
+  /* Warning color */
+  --warningColor: #fea23c;
+  --darkwarningColor: rgb(196, 111, 0);
+
+  /* Danger color */
+  --dangerColor: #df0b0b;
+  --darkdangerColor: #ff2600;
+
+  /* linear color */
+  --linearColor1: linear-gradient(to right, #00aeef 0%, #9e61c1 100%);
+  --linearColor2: linear-gradient(to right, #1a90e8 10%, #f7b50e 100%);
+
+  --blurcolor1: #bf65f7;
+  --blurcolor2: #26b2ed;
+  --blurcolor3: #99e29a;
+
+  /* Supplement color */
+  --color1: #ffb000;
+  --color2: #d30074;
+  --color3: #e96e16;
+  --color4: #06b91e;
+
+  /* Font family */
+  --DefaultFont: "Nunito", Arial;
+  --TitleFont: "KronaOne", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.darkTheme {
+  /* principal color */
+  --primaryColor: #843730;
+  --secondaryColor: #63617b;
+  --thirdColor: #3f7b43;
+
+  --disabledColor: #c0c0c0;
+  --whiteColor: #253a6c;
+  --fillInput: #1c2c4a;
+  --greyColor: #1c2638;
+  --hoverColor: #f8f9fb;
+
+  --hoverBtnColor: #00000031;
+
+  //input background-color;
+  --inputBackgroundColor: #e0e0e00f;
+  --inputTexteColor: #c5c5c5;
+
+  /* background */
+  --backgroundColor: #121321;
+  --backgroundColorNav: #cdcdcd;
+
+  // background transparent reverse
+
+  --backgroundColorTrasparentReverse: #cdcdcd22;
+
+  --backgroundColorTrasparentReverse2: #cdcdcd19;
+
+  --backgroundColorTrasparentReverse3: #cdcdcd19;
+
+  --backgroundColorTransparent: rgba(0, 0, 0, 0.247);
+  --backgroundColorTransparentDark: rgb(214, 214, 214);
+
+  /* Transparent Color */
+  --whiteColorTransparent: rgba(63, 63, 63, 0.5);
+  --darkColorTransparent: rgba(68, 91, 132, 0.4);
+
+  /* background cards */
+  --backgroundColorCards: #23325246;
+
+  /* Font color */
+  --darkFontColor: #dcdcdc;
+  --lightFontColor: #6c6d6e;
+
+  /* Success color */
+  --succesColor: #1b9a22;
+  --darksuccesColor: #26822b;
+
+  /* Warning color */
+  --warningColor: #fea23c;
+  --darkwarningColor: rgb(196, 111, 0);
+
+  /* Danger color */
+  --dangerColor: #df0b0b;
+  --darkdangerColor: #ff2600;
+
+  /* linear color */
+  --linearColor1: linear-gradient(to right, #360093 0%, #003893 100%);
+  --linearColor2: linear-gradient(to right, #1a90e8 10%, #f7b50e 100%);
+
+  /* For blur background */
+  --blurcolor1: #ca81f7;
+  --blurcolor2: #7eccee;
+  --blurcolor3: #99e29a;
+
+  /* Supplement color */
+  --color1: #ffb000;
+  --color2: #d30074;
+  --color3: #e96e16;
+  --color4: #06b91e;
+}

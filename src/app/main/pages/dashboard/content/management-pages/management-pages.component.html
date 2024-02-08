@@ -1,0 +1,121 @@
+<!-- <app-navigation-dashboard></app-navigation-dashboard> -->
+
+<div class="main-container-dashboard-management">
+  <div class="bloc-form">
+    <div class="form">
+      <label for=""> Numero d'inscrption </label>
+      <input
+        class="input-perso"
+        type="text"
+        name="Numero d'inscrption"
+        placeholder="Numero d'inscrption"
+        #numeroInscri
+        [(ngModel)]="currentStudent.numero"
+      />
+      <label for=""> Nom </label>
+      <input
+        class="input-perso outlined-none"
+        type="text"
+        placeholder="Nom"
+        #nom
+        [(ngModel)]="currentStudent.nom"
+      />
+      <label for=""> Prenom </label>
+      <input
+        class="input-perso"
+        [(ngModel)]="currentStudent.prenom"
+        type="text"
+        placeholder="prenom"
+        #prenom
+      />
+      <label for=""> Date de Naissance </label>
+      <input
+        class="input-perso"
+        type="date"
+        placeholder="Date de Naissance"
+        #dateNaiss
+        [(ngModel)]="currentStudent.dateNaiss"
+      />
+
+      <div class="inline-content">
+        <label for=""> Niveau </label>
+        <select
+          class="input-perso"
+          [(ngModel)]="currentStudent.classe"
+          type="text"
+          #classe
+        >
+          <option selected value="L1">L1</option>
+          <option value="L2">L2</option>
+          <option value="L3">L3</option>
+          <option value="M1">M1</option>
+          <option value="M2">M2</option>
+        </select>
+        <label for=""> Mention </label>
+        <select
+          class="input-perso"
+          type="text"
+          [(ngModel)]="currentStudent.mention"
+          #mention
+        >
+          <option selected value="AES">AES</option>
+          <option value="DAII">DAII</option>
+          <option value="RPM">RPM</option>
+        </select>
+        <div class="validation-btn btn-one">
+          <button class="btn-perso btn-validation" (click)="confirmEdit()">
+            Modifier
+          </button>
+        </div>
+      </div>
+
+      <div class="validation-btn">
+        <button class="btn-perso btn-validation" (click)="handleClick()">
+          Enregistrer
+        </button>
+
+        <button class="btn-perso" (click)="annuler()">Annuler</button>
+      </div>
+    </div>
+  </div>
+  <div class="table-main">
+    <div class="main-table">
+      <table>
+        <thead>
+          <tr>
+            <th>Numero</th>
+            <th>Numero d'inscription</th>
+            <th>Nom</th>
+            <th>Prenom</th>
+            <th>Date Naissance</th>
+            <th>Niveau</th>
+            <th>Mention</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let etudiant of etudiantList">
+            <td>{{ etudiant.id }}</td>
+            <td>{{ etudiant.numero }}</td>
+            <td>{{ etudiant.nom }}</td>
+            <td>{{ etudiant.prenom }}</td>
+            <td>{{ etudiant.dateNaiss }}</td>
+            <td>{{ etudiant.classe }}</td>
+            <td>{{ etudiant.mention }}</td>
+            <td class="btn-container">
+              <button
+                class="delete"
+                (click)="deleteEtudiantIntable(etudiant.id)"
+              >
+                Delete
+              </button>
+              <button class="edit" (click)="getEtudiantObject(etudiant)">
+                Edit
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

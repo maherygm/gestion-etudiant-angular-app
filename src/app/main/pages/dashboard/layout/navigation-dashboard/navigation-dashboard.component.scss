@@ -1,0 +1,53 @@
+.dashboard-nav-container {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 15px 0px;
+  background-color: var(--backgroundColorNav);
+  color: var(--backgroundColor);
+  z-index: 9999;
+  .list-nav {
+    ul {
+      display: flex;
+      flex-direction: row;
+      gap: 60px;
+      li {
+        list-style: none;
+        padding: 10px 15px;
+        border-radius: 20px;
+        cursor: pointer;
+        transition: background-color 200ms ease-in;
+      }
+      li:hover {
+        color: white;
+        background-color: var(--primaryColor);
+      }
+      li:active {
+        color: white;
+        background-color: var(--primaryColor);
+      }
+    }
+  }
+  .profile-user {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    .svg-container svg {
+      width: 70px;
+      height: 70px;
+    }
+    .darkmode {
+      button {
+        outline: none;
+        border: inherit;
+        width: 150px;
+        border-radius: 20px;
+        padding: 17px 15px;
+        cursor: pointer;
+      }
+    }
+  }
+}
